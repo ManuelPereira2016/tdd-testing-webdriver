@@ -1,0 +1,16 @@
+{
+    "presets": [
+        "es2015",
+        "stage-0",
+        "stage-3"
+    ],
+    "plugins": [
+//    	"dynamic-import-webpack"
+//      "transform-class-properties",
+//		"transform-react-jsx",
+//		"transform-react-jsx-compat",
+//	    "transform-react-constant-elements",
+//      "transform-react-remove-prop-types",
+//	    "transform-react-inline-elements"
+	]
+}

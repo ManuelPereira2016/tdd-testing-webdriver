@@ -1,0 +1,66 @@
+{
+  "name": "tic-tac",
+  "description": "A tic tac game demo with React and ES2015",
+  "main": "gulpfile.babel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/????/????.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/????/????/issues"
+  },
+  "homepage": "https://gitlab.com/????/?????#README",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-dynamic-import-webpack": "^1.0.1",
+    "babel-plugin-transform-react-inline-elements": "^6.22.0",
+    "babel-plugin-transform-react-jsx-compat": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "bootstrap-sass": "^3.3.7",
+    "css-loader": "^0.26.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-config-airbnb-base": "^11.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-prefer-object-spread": "^1.2.1",
+    "eslint-plugin-react": "^6.10.3",
+    "expose-loader": "^0.7.3",
+    "express": "^4.15.3",
+    "file-loader": "^0.9.0",
+    "gulp": "^3.9.1",
+    "gulp-babel-minify": "^0.1.12",
+    "gulp-eslint": "^3.0.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-watch": "^4.3.11",
+    "node-sass": "^3.13.0",
+    "prop-types": "^15.5.10",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "sweetalert-react": "^0.4.10",
+    "vinyl-named": "^1.1.0",
+    "webdriverio": "^4.8.0",
+    "webpack": "^1.15.0",
+    "webpack-stream": "^3.2.0"
+  },
+  "dependencies": {
+    "express": "^4.15.3",
+    "font-awesome": "^4.7.0",
+    "font-awesome-sass": "^4.7.0",
+    "fontawesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "moment": "^2.17.1",
+    "url-loader": "^0.5.7"
+  }
+}
