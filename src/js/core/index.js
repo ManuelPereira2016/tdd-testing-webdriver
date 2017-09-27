@@ -3,7 +3,7 @@ window.html = `
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Login</div>
+                <div id="panel-heading" class="panel-heading">Login</div>
                 <div class="panel-body">
                     <form class="form-horizontal" role="form" id="login">
                         <div class="form-group">
@@ -86,7 +86,7 @@ window.Test = class Test {
 
     if(logged){
       document.querySelector('#brand').innerHTML = `Welcome ${auth.name}`
-      this.target.innerHTML = ''
+      this.target.innerHTML = '<p id="main-text">You have successfully logged in!.</p>'
       this.authMiddleware()
     }
   }
@@ -115,7 +115,7 @@ window.Test = class Test {
       if(admin.password == password){
         window.localStorage.setItem('is_logged', 'true')
         document.querySelector('#brand').innerHTML = `Welcome ${admin.name}`
-        this.target.innerHTML = ''
+        this.target.innerHTML = '<p id="main-text">You have successfully logged in!.</p>'
         this.resetHash()
       }
     } else {
@@ -137,7 +137,7 @@ window.Test = class Test {
         if(auth.password == password ){
           window.localStorage.setItem('is_logged', 'true')
           document.querySelector('#brand').innerHTML = `Welcome ${auth.name}`
-          this.target.innerHTML = ''
+          this.target.innerHTML = '<p id="main-text">You have successfully logged in!.</p>'
           this.resetHash()
         }
       } else if(admin){
