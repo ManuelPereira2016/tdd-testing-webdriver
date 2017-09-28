@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="register_form" timestamp="2017-09-27T20:36:31" time="0.011" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="85bbbab9df690853d2b7d6003b7fef8c"/>
+      <property name="suiteName" value="register form"/>
+      <property name="capabilities" value="firefox"/>
+      <property name="file" value="./test/specs/register.spec.js"/>
+    </properties>
+    <testcase classname="firefox.register_form" name="should_redirect_user_to_login_page" time="0.004"/>
+  </testsuite>
+</testsuites>

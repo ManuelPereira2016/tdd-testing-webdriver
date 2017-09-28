@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="login_form" timestamp="2017-09-27T20:36:31" time="0.023" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="c562a2611b893bc84e8707a3d8af295c"/>
+      <property name="suiteName" value="login form"/>
+      <property name="capabilities" value="firefox"/>
+      <property name="file" value="./test/specs/login.spec.js"/>
+    </properties>
+    <testcase classname="firefox.login_form" name="should_allow_access_with_admin_default_creds" time="0.005"/>
+  </testsuite>
+</testsuites>
