@@ -10,10 +10,10 @@ describe('register form', function() {
         yield browser.waitForExist('#login', 10000);
         yield browser.isExisting('#login').then(function(isExisting) {
             expect(isExisting).toBe(true);
+        });
 
-            yield browser.getText('#panel-heading').then(function(msg) {
-                expect(msg).toContain('Login');
-            });
+        yield browser.getText('#panel-heading').then(function(msg) {
+            expect(msg).toContain('Login');
         });
 
     });

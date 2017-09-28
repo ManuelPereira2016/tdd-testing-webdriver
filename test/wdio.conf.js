@@ -13,7 +13,7 @@ exports.config = {
     // backend you should define the host address and port here.
     //
     host: '0.0.0.0',
-    port: 4445,
+    port: 4444,
     //
     // =================
     // Service Providers
@@ -111,7 +111,6 @@ exports.config = {
     // Jasmine: `$ npm install jasmine`
     // Cucumber: `$ npm install cucumber`
     framework: 'jasmine',
-    //
     // Test reporter for stdout.
     // The following are supported: dot (default), spec and xunit
     // see also: http://webdriver.io/guide/testrunner/reporters.html

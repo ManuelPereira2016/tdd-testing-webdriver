@@ -50,7 +50,7 @@
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	window.html = '\n<div class="container">\n    <div class="row">\n        <div class="col-md-8 col-md-offset-2">\n            <div class="panel panel-default">\n                <div class="panel-heading">Login</div>\n                <div class="panel-body">\n                    <form class="form-horizontal" role="form" id="login">\n                        <div class="form-group">\n                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>\n                            <div class="col-md-6">\n                                <input id="email" type="email" class="form-control" name="email" value="" required autofocus>\n                                    <span class="help-block">\n                                        <strong></strong>\n                                    </span>\n                            </div>\n                        </div>\n                        <div class="form-group">\n                            <label for="password" class="col-md-4 control-label">Password</label>\n\n                            <div class="col-md-6">\n                                <input id="password" type="password" class="form-control" name="password" required>\n                                    <span class="help-block">\n                                        <strong></strong>\n                                    </span>\n                            </div>\n                        </div>\n\n                        <div class="form-group">\n                            <div class="col-md-6 col-md-offset-4">\n                                <div class="checkbox">\n                                    <label>\n                                        <input type="checkbox" name="remember" /> Remember Me\n                                    </label>\n                                </div>\n                            </div>\n                        </div>\n\n                        <div class="form-group">\n                            <div class="col-md-8 col-md-offset-4">\n                                <button type="submit" class="btn btn-primary">\n                                    Login\n                                </button>\n                                <a class="btn btn-link" href="#">\n                                    Forgot Your Password?\n                                </a>\n                            </div>\n                        </div>\n                    </form>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n';
+	window.html = '\n<div class="container">\n    <div class="row">\n        <div class="col-md-8 col-md-offset-2">\n            <div class="panel panel-default">\n                <div id="panel-heading" class="panel-heading">Login</div>\n                <div class="panel-body">\n                    <form class="form-horizontal" role="form" id="login">\n                        <div class="form-group">\n                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>\n                            <div class="col-md-6">\n                                <input id="email" type="email" class="form-control" name="email" value="" required autofocus>\n                                    <span class="help-block">\n                                        <strong></strong>\n                                    </span>\n                            </div>\n                        </div>\n                        <div class="form-group">\n                            <label for="password" class="col-md-4 control-label">Password</label>\n\n                            <div class="col-md-6">\n                                <input id="password" type="password" class="form-control" name="password" required>\n                                    <span class="help-block">\n                                        <strong></strong>\n                                    </span>\n                            </div>\n                        </div>\n\n                        <div class="form-group">\n                            <div class="col-md-6 col-md-offset-4">\n                                <div class="checkbox">\n                                    <label>\n                                        <input type="checkbox" name="remember" /> Remember Me\n                                    </label>\n                                </div>\n                            </div>\n                        </div>\n\n                        <div class="form-group">\n                            <div class="col-md-8 col-md-offset-4">\n                                <button type="submit" class="btn btn-primary">\n                                    Login\n                                </button>\n                                <a class="btn btn-link" href="#">\n                                    Forgot Your Password?\n                                </a>\n                            </div>\n                        </div>\n                    </form>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n';
 
 	window.Test = function () {
 	  function Test() {
@@ -88,7 +88,7 @@
 
 	      if (logged) {
 	        document.querySelector('#brand').innerHTML = 'Welcome ' + auth.name;
-	        this.target.innerHTML = '';
+	        this.target.innerHTML = '<p id="main-text">You have successfully logged in!.</p>';
 	        this.authMiddleware();
 	      }
 	    }
@@ -120,7 +120,7 @@
 	        if (admin.password == password) {
 	          window.localStorage.setItem('is_logged', 'true');
 	          document.querySelector('#brand').innerHTML = 'Welcome ' + admin.name;
-	          this.target.innerHTML = '';
+	          this.target.innerHTML = '<p id="main-text">You have successfully logged in!.</p>';
 	          this.resetHash();
 	        }
 	      } else {
@@ -143,7 +143,7 @@
 	          if (auth.password == password) {
 	            window.localStorage.setItem('is_logged', 'true');
 	            document.querySelector('#brand').innerHTML = 'Welcome ' + auth.name;
-	            this.target.innerHTML = '';
+	            this.target.innerHTML = '<p id="main-text">You have successfully logged in!.</p>';
 	            this.resetHash();
 	          }
 	        } else if (admin) {
