@@ -18,6 +18,6 @@ The sample project consist of a SPA app only with ES6 that let user register and
 
 Some things to point out:
 
-- Today started to use Jenkins and get installed selenium, but through documentation i have setup some settings.
+- Today started to use Jenkins and get installed selenium, but through documentation i have successfully setup up some settings.
 
-- 
+- Really liked the specs files environment and sintax!.
